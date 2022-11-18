@@ -1,0 +1,34 @@
+1.Inicio
+2.nombre,x(50)[{a-z},{A-Z},{BS}]
+3.costoComputadora,d[0-n]
+4.tipoCliente,i[0-n]
+5.tipoCliente1,x(50)[{a-z},{A-Z},{BS}]
+6.tipoCliente1<--""
+7.total,d[0-n]
+8.contador,i[0,n]
+9.contador<--1
+10.mensaje,x(500)[{a-z},{A-Z},{BS}]
+11.mensaje<--""
+12.mientras contador <= 7 entonces
+13.		<<"ingresar nombre del cliente:"
+14.		>>nombre
+15.		<<"ingresar el costo de la computadora:"
+16.		>>costoComputadora
+17.		<<"ingrese tipo de cliente:"
+18.		>>tipoCliente
+19.		si tipoCliente == 1 entonces
+20.			total<-- costoComputadora * 0.10 - costoComputadora * -1
+21.			tipoCliente1<-- "cliente tipo 1"
+22.		De lo contrario
+23.			si tipoCliente == 2 entonces
+24.				total<-- costoComputadora * 0.20 - costoComputadora * -1
+25.			tipoCliente1<-- "cliente tipo 2"
+26.		De lo contrario 
+27.			total<-- costoComputadora
+28.			tipoCliente1<-- "no es un tipo de cliente"
+29.		Finsi
+30.		mensaje<-- mensaje + nombre + "\t" + tipoCliente1 + "\t" + "precio a pagar de:" + total + "\n"
+31.		contador<-- contador + 1
+32.FinMientras
+33.<<mensaje
+34.Fin

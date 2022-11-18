@@ -1,0 +1,36 @@
+1.Inicio
+2.bandera,l<-- true
+3.nombre,x(50)[{a-z},{A-Z},{BS}]
+4.posicion,x(50)[{a-z},{A-Z},{BS}]
+5.opcion,x(1)[{a-z},{A-Z}]
+6.mensaje,x(500)[{a-z},{A-Z},{BS}]<--""
+7.estatura,d[0-n]
+8.estatura1,d[0-n]<--0
+9.edad,i[0-n]
+10.edad1,d[0-n]<--0
+11.total,d[0-n]
+12.total2,d[0-n]
+13.total3,d[0-n]
+14.mientras bandera == true entonces
+15.		<<"ingrese el nombre del jugador:"
+16.		>>nombre
+17.		<<"ingrese la posición de juego:"
+18.		>>posicion
+19.		<<"ingrese la edad de el jugador:"
+20.		>>edad
+21.		<<"ingrese la estatura del jugador:"
+22.		>>estatura
+23.		edad1<-- edad + edad 
+24.		estatura1<-- estaura + estatura
+25.		mensaje<-- mensaje + nombre + "\t" + "-"posicion"-" + "\t" + "edad " + edad + "\t" + "estatura " + estatura + 			"\n"
+26.		<<"si desea salir ingrese s"
+27.		>>opcion
+28.		si opcion == "s" entonces
+29.			bandera<-- false
+30.		finSi
+31.finMientras
+32.edad1<-- estatura1/5
+33.estatura1<-- estatura1/5
+34.<<mensaje
+35.<<"probmedio de edades:" + edad1 + "\n" + "promedio de estatura:" + estatura1 +"\n"
+36.fin

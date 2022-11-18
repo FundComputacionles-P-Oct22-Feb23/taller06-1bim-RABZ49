@@ -1,0 +1,22 @@
+1.Inicio
+2.contador,i[0,n]
+3.contador<--1
+4.nombre,x(50)[{a-z},{A-Z},{BS}]
+5.diaTrabajados,i[0-n]
+6.costoDia,d[0-n]
+7.total,d[0-n]
+8.mensaje,x(500)[{a-z},{A-Z},{BS}]
+9.mensaje<--""
+10.mientras contador <= 5 entonces
+11.		<<"ingrese el nombre del empleado:"
+12.		>>nombre
+13.		<<"ingresar el numero de dias trabajados:"
+14.		>>diaTrabajados
+15.		<<"ingrese el costo de un dia de trabajo:"
+16.		>>costoDia
+17.		total = costoDia * diaTrabajados
+18.		contador<--contador+1
+19.		mensaje<--mensaje + nombre + "\t" + diaTrabajados + "\t" + costoDia + "\t" + total +"\n"
+20.	finMientras
+21.<<mensaje
+22.fin

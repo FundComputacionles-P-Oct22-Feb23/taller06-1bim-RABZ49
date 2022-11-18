@@ -1,0 +1,25 @@
+1.Inicio
+2.contador,i[0,n]
+3.contador<--1
+4.nombre,x(50)[{a-z},{A-Z},{BS}]
+5.nota,d[0-n]
+6.total,x(20)[{a-z},{A-Z},{BS}]
+7.nota,d[0-n]
+8.mensaje,x(500)[{a-z},{A-Z},{BS}]
+9.mensaje<--""
+10.mientras contador <= 4 entonces
+11.		<<"ingrese el nombre del estudiante:"
+12.		>>nombre
+13.		<<"ingrese la nota del estudiante:"
+14.		>>nota
+15.		si nota <= 10 and nota >= 7 entonces
+16.			total<-- "aprobado"
+17.		De lo contrario
+18.			si nota <= 6 and nota >= 0 entoces
+19.				total<-- "reprobado"
+20.mensaje<-- mensaje + nombre + "\t" + nota + "\t" + total + "\n"
+21.contador<-- contador + 1
+22.		FinSi
+23.FinMientras
+24.<<mensaje
+25.Fin

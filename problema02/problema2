@@ -1,0 +1,12 @@
+1.Inicio
+2.contador,i[0,n]<-- 5
+3.contador2,i[0,n]<-- 10
+4.texto,x(200)[{a-z},{A-Z},{BS}]
+5.texto<--""
+6.mientras contador <=30
+7.		contador<-- contador + 5
+8.		contador2<-- contador + 2
+9.		texto<-- texto + contador + "/" + contador2 + "\n"
+10.finMientras
+11.<<texto
+12.Fin
