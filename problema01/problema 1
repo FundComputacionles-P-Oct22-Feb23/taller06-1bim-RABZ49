@@ -8,5 +8,5 @@
 8.		contador2<-- contador + 1
 9.		texto<-- texto + contador + "/" + contador2 + "\n"
 10.finMientras
-11.<<texto
-12.FIn
+11.<<texto	
+12.Fin

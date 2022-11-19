@@ -15,7 +15,7 @@
 15.		si nota <= 10 and nota >= 7 entonces
 16.			total<-- "aprobado"
 17.		De lo contrario
-18.			si nota <= 6 and nota >= 0 entoces
+18.			si nota <= 6 entoces
 19.				total<-- "reprobado"
 20.mensaje<-- mensaje + nombre + "\t" + nota + "\t" + total + "\n"
 21.contador<-- contador + 1

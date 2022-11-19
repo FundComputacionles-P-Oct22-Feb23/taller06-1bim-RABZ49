@@ -8,29 +8,26 @@
 8.estatura1,d[0-n]<--0
 9.edad,i[0-n]
 10.edad1,d[0-n]<--0
-11.total,d[0-n]
-12.total2,d[0-n]
-13.total3,d[0-n]
-14.mientras bandera == true entonces
-15.		<<"ingrese el nombre del jugador:"
-16.		>>nombre
-17.		<<"ingrese la posición de juego:"
-18.		>>posicion
-19.		<<"ingrese la edad de el jugador:"
-20.		>>edad
-21.		<<"ingrese la estatura del jugador:"
-22.		>>estatura
-23.		edad1<-- edad + edad 
-24.		estatura1<-- estaura + estatura
-25.		mensaje<-- mensaje + nombre + "\t" + "-"posicion"-" + "\t" + "edad " + edad + "\t" + "estatura " + estatura + 			"\n"
-26.		<<"si desea salir ingrese s"
-27.		>>opcion
-28.		si opcion == "s" entonces
-29.			bandera<-- false
-30.		finSi
-31.finMientras
-32.edad1<-- estatura1/5
-33.estatura1<-- estatura1/5
-34.<<mensaje
-35.<<"probmedio de edades:" + edad1 + "\n" + "promedio de estatura:" + estatura1 +"\n"
-36.fin
+11.mientras bandera == true entonces
+12.		<<"ingrese el nombre del jugador:"
+13.		>>nombre
+14.		<<"ingrese la posición de juego:"
+15.		>>posicion
+16.		<<"ingrese la edad del jugador:"
+17.		>>edad
+18.		<<"ingrese la estatura del jugador:"
+19.		>>estatura
+20.		edad1<-- edad + edad 
+21.		estatura1<-- estaura + estatura
+22.		mensaje<-- mensaje + nombre + "\t" + "-"posicion"-" + "\t" + "edad " + edad + "\t" + "estatura " + estatura + 			"\n"
+23.		<<"si desea salir ingrese s"
+24.		>>opcion
+25.		si opcion == "s" entonces
+26.			bandera<-- false
+27.		finSi
+28.finMientras
+29.edad1<-- estatura1/5
+30.estatura1<-- estatura1/5
+31.<<mensaje
+32.<<"probmedio de edades:" + edad1 + "\n" + "promedio de estatura:" + estatura1 +"\n"
+33.fin
